@@ -1,0 +1,127 @@
+/* src/App.css */
+:root {
+  --gradient: linear-gradient(to right, #8e2de2, #4facfe, #00f2fe);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio-card {
+  background: white;
+  width: 950px;
+  display: flex;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.left-side {
+  flex: 1;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.image-container {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-side {
+  flex: 1.2;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 42px;
+  margin: 0;
+  color: #222;
+  font-weight: 800;
+}
+
+.title {
+  font-size: 18px;
+  color: #444;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.bio {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-list {
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contact-item .icon {
+  margin-right: 15px;
+  color: #8e2de2;
+  width: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #4facfe;
+  transform: translateY(-3px);
+}
+
+/* Tương thích điện thoại */
+@media (max-width: 768px) {
+  .portfolio-card {
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0;
+  }
+}
