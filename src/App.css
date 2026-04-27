@@ -125,3 +125,109 @@ body, html {
     margin: 20px 0;
   }
 }
+/* --- CODE THÊM CHO PHẦN DỰ ÁN VÀ CHỨNG CHỈ --- */
+.main-wrapper {
+  padding: 50px 20px; /* Thêm padding để cuộn mượt hơn */
+  align-items: flex-start; /* Cho các khối đẩy từ trên xuống */
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.portfolio-card {
+  margin-bottom: 40px; /* Tạo khoảng cách với phần dưới */
+}
+
+.section-card {
+  background: white;
+  border-radius: 5px;
+  padding: 40px 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.section-icon {
+  margin-right: 15px;
+  color: #4facfe;
+}
+
+/* Lưới dự án */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.project-item {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #8e2de2;
+  transition: 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-item h3 {
+  margin: 0 0 10px 0;
+  color: #222;
+  font-size: 20px;
+}
+
+.tech-stack {
+  font-size: 13px;
+  color: #8e2de2;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Danh sách chứng chỉ */
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cert-list li {
+  padding: 15px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.cert-list li:last-child {
+  border-bottom: none;
+}
+
+.cert-list li strong {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.cert-list li span {
+  font-size: 15px;
+  color: #666;
+}
